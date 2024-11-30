@@ -1,0 +1,200 @@
+<!--
+RMIT University Vietnam
+Course: COSC3058 Web Programming Bootcamp
+Semester: 2024B
+Assessment: Final Programming Challenge
+Author: Tran Dang Phuc
+ID: s4015692
+Acknowledgement: Acknowledge the resources that you use here.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Website title -->
+    <title>Tran Dang Phuc's Online Resume</title>
+
+    <!-- Including CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/logo.jpg">
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- resume container -->
+    <section id="resume">
+        <!-- resume header -->
+        <header>
+            <div class="header__wrapper">
+                <a href="index.html">
+                    <!-- resume header image -->
+                    <img class="header__image" src="./assets/logo.jpg" alt="My logo image" height="56px" width="56px">
+                </a>
+                <!-- resume header heading -->
+                <a href="index.html">
+                    <h1 class="header__heading">
+                        My
+                        <b>
+                            Online Resume
+                        </b>
+                    </h1>
+                </a>
+            </div>
+        </header>
+
+        <!-- resume main -->
+        <main>
+            <!-- main contact -->
+            <div id="contact">
+                <div>
+                    <!-- contact avatar -->
+                    <div class="contact-avatar">
+                        <img class="contact-profile__image" src="./assets/profile.jpg" alt="My profile image"
+                            height="200px">
+                    </div>
+
+                    <!-- contact info -->
+                    <div class="contact-info">
+                        <h2 class="contact__name">
+                            <span class="contact-first-name">Tran</span>
+                            Dang Phuc
+                        </h2>
+
+                        <h2 class="contact-title">
+                            IT DEVELOPER
+                        </h2>
+
+                        <h2 class="contact-info-sid">
+                            s4015692
+                        </h2>
+
+                        <h2 class="contact-info-email">
+                            s4015692@rmit.edu.vn
+                        </h2>
+                    </div>
+                </div>
+
+                <!-- icon -->
+                <div class="contact-icon">
+                    <a class="contact-media-icon" href="#">
+                        <img src="./assets/facebook.png" alt="Social media icons" height="40px">
+                    </a>
+
+                    <a class="contact-media-icon" href="#">
+                        <img src="./assets/twitter.png" alt="Social media icons" height="40px">
+                    </a>
+
+                    <a class="contact-media-icon" href="#">
+                        <img src="./assets/instagram.png" alt="Social media icons" height="40px">
+                    </a>
+                </div>
+            </div>
+
+            <!-- main overview -->
+            <div id="overview">
+                <section class="education">
+                    <!-- education heading -->
+                    <h2 class="overview-heading">
+                        Education
+                    </h2>
+
+                    <ul id="education">
+
+                    </ul>
+
+                    <!-- education form -->
+                    <form class="education-form" action="" method="POST">
+
+                        <div>
+                            <label class="education-label" for="Degree">Degree: </label>
+                            <input class="education-input" type="text" name="Degree" id="Degree"
+                                placeholder="Bachelor of Information Technology">
+                        </div>
+
+
+                        <label class="education-label" for="Institution">Institution: </label>
+                        <input class="education-input" type="text" name="Institution" id="Institution"
+                            placeholder="RMIT Vietnam">
+
+                        <label class="education-label" for="Duration">Duration: </label>
+                        <input class="education-input" type="text" name="Duration" id="Duration"
+                            placeholder="2024 - 2027 (expected)...">
+
+                        <label class="education-label" for="Duration">Desciprtion: </label>
+                        <textarea class="education-input" type="text" name="Duration" id="Duration"
+                            placeholder="More info about your degree...">
+
+                        </textarea>
+
+                        <button class="overview-button education-button" type="submit">
+                            Submit
+                        </button>
+                    </form>
+
+                </section>
+
+                <section class="skills">
+                    <!-- skills header -->
+                    <h2 class="overview-heading">
+                        Skills
+                    </h2>
+
+                    <!-- skills list -->
+                    <ul class="skills-list">
+                        <li class="skills-list-item">
+                            HTML5 🗑️
+                        </li>
+
+                        <li class="skills-list-item">
+                            CSS3 🗑️
+                        </li>
+
+                        <li class="skills-list-item">
+                            Javascript 🗑️
+                        </li>
+                    </ul>
+
+                    <!-- skills form -->
+                    <form action="abc.html" method="POST">
+                        <label for="Skill"> </label>
+                        <input class="skills-form" type="text" name="Skill" id="Skill"
+                            placeholder="Enter your skill...">
+                    </form>
+
+                    <!-- skills button -->
+                    <button class="overview-button skills-button" type="submit">
+                        Submit
+                    </button>
+                </section>
+            </div>
+        </main>
+
+        <!-- resume footer -->
+        <footer>
+            Crafted with 👌by
+            <b>
+                Tran Dang Phuc
+            </b>
+        </footer>
+    </section>
+
+    <!-- connect js files -->
+    <script src="./scriptEducation.js"></script>
+    <script src="./scriptSkills.js"></script>
+</body>
+
+</html>

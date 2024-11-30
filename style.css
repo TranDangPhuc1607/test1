@@ -1,0 +1,178 @@
+/* 
+RMIT University Vietnam
+Course: COSC3058 Web Programming Bootcamp
+Semester: 2024B
+Assessment: Final Programming Challenge
+Author: Tran Dang Phuc
+ID: s4015692
+Acknowledgement: Acknowledge the resources that you use here.
+*/
+
+/* Root for color */
+:root {
+    --primary-color: #FFB200;
+    --primary-alpha-color: rgba(255, 178, 0, 0.05);
+    --border-color: #EB5B00;
+    --white-color: white;
+    --red-color: red;
+    --background-color: black;
+}
+
+/* Google font */
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+/* heading font-weight */
+h1,
+h2 {
+    font-weight: 500;
+}
+
+/* header CSS */
+.header__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.header__image {
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+    margin-right: 10px;
+}
+
+.header__heading {
+    color: var(--primary-color);
+}
+
+/* main CSS */
+main {
+    border: 2px solid var(--border-color);
+    display: flex;
+}
+
+/* contact CSS */
+#contact {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 2px solid var(--border-color);
+}
+
+.contact-avatar {
+    text-align: center;
+}
+
+.contact-profile__image {
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+    margin-top: 20px;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-first-name,
+.contact-title {
+    color: var(--primary-color);
+}
+
+.contact-info-sid,
+.contact-info-email {
+    font-style: italic;
+}
+
+.contact-icon {
+    text-align: center;
+}
+
+.contact-media-icon {
+    margin: 10px;
+    text-decoration: none;
+}
+
+
+/* overview CSS */
+#overview {
+    flex: 2;
+}
+
+.overview-heading {
+    color: var(--primary-color);
+}
+
+.overview-button {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.education {
+    margin: 20px;
+}
+
+#education {
+    padding: 0;
+}
+
+.education-list-item {
+    background-color: var(--primary-alpha-color);
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.education-input {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.education-button {
+    width: 100%;
+}
+
+.education-bold-text {
+    font-weight: bold;
+}
+
+/* skills CSS */
+.skills {
+    margin: 20px;
+}
+
+/* skills list CSS */
+
+.skills-list {
+    display: block;
+}
+
+.skills-list-item {
+    display: inline-flex;
+    background-color: var(--background-color);
+    color: var(--white-color);
+    margin: 5px;
+}
+
+.skills-form {
+    width: 100%;
+}
+
+.skills-button {
+    width: 100%;
+    margin: 10px;
+}
+
+
+/* input-error CSS */
+.input-error {
+    color: var(--red-color);
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Footer CSS */
+footer {
+    text-align: center;
+}
